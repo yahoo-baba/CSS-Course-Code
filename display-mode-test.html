@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Display-Mode</title>
+	<style>
+		body{
+			font-family:arial;
+			background: pink;				
+		}
+
+		/*@media all and (display-mode: fullscreen) {
+		  body {
+		    background: lightgreen;	
+		    font-size: 30px;	
+		  }
+		}*/
+
+		@media (display-mode: fullscreen) {
+		   h1 {
+		    color: green;
+		   } 
+		  }
+		  @media (display-mode: standalone) {
+		   h1 {
+		    color: red;
+		   } 
+		  }
+		  @media (display-mode: minimal-ui) {
+		   h1 {
+		    color: orange;
+		   } 
+		  }
+		  @media (display-mode: browser) {
+		   h1 {
+		    color: blue;
+		   } 
+		  }
+	</style>
+</head>
+<body>
+	<h1>Yahoo Baba : CSS Display-Mode</h1>	
+	
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam dicta excepturi, impedit ipsum non quia itaque quo. Illo culpa voluptates maiores alias praesentium ut totam sit ullam expedita magnam, odio maxime impedit facilis porro rerum, unde vero blanditiis molestiae vitae, corrupti? Adipisci earum quibusdam deleniti dignissimos consequuntur maxime magnam hic itaque! Fuga illo recusandae dolorem natus? Aut, ipsum dolorum saepe at minima aperiam, facilis doloremque quo molestias reiciendis dolores suscipit, autem quasi atque temporibus inventore, quas. Porro ut officia facere suscipit iusto, itaque perferendis labore soluta eligendi enim impedit repudiandae illum esse dolore in voluptas repellendus assumenda error vitae ullam exercitationem maxime doloremque adipisci. Reiciendis nobis officiis ea deleniti a explicabo hic necessitatibus asperiores nulla. Fugiat mollitia quas blanditiis fugit dolorum dignissimos. Totam nulla cum praesentium et vitae suscipit omnis reprehenderit! Dolorem dolor aspernatur non inventore similique officiis fugiat cupiditate id exercitationem neque nemo, esse necessitatibus vero ipsum ullam maxime nisi. Voluptas, repellendus tempora accusamus doloribus delectus quae quia nobis deleniti quas earum nam molestias accusantium placeat deserunt numquam iste similique odit pariatur dolore ullam asperiores tenetur, consequuntur nihil reprehenderit distinctio. Dolore eveniet illum ullam eligendi a deserunt dicta, repudiandae, asperiores pariatur! Nulla aliquid saepe beatae, dolorum ratione eos.</p>
+
+	<button onclick="openWindow()">Open Window</button>
+
+	<script>
+		function openWindow(){
+			window.open("test.html","","width=300px,height=200px");
+		}
+	</script>
+</body>
+</html>

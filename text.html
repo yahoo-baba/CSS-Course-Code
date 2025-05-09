@@ -1,0 +1,58 @@
+<html>
+
+<head>
+	<title>Text Properties</title>
+	<style>
+		.container {
+			position: relative;
+			display: inline-block;
+			width: 400px;
+			height: 400px;
+			border: 1px solid black;
+		}
+
+		.path {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			background-color: magenta;
+			animation: move 3s linear infinite;
+			/* display: grid;
+			place-items: center; */
+			border-radius: 5px;
+		}
+
+		.xywh-path {
+			/* offset-path: circle(6rem at 12rem 8rem); */
+			offset-path: path("M 0,200 Q 200,200 260,80 Q 290,20 400,0 Q 300,100 400,200");
+			/* offset-path: path("M 100 100 L 300 100 L 200 300 z") auto; */
+		}
+
+		@keyframes move {
+			0% {
+				offset-distance: 0%;
+			}
+
+			100% {
+				offset-distance: 100%;
+			}
+		}
+
+		body {
+			/* height: 100vh;
+			margin: 0;
+			display: grid;
+			place-items: center; */
+			padding: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="path xywh-path">→</div>
+	</div>
+
+</body>
+
+</html>

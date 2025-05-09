@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Display:table</title>
+	<style>
+    body{
+			font-family: arial;
+			font-size: 20px;
+			line-height: 24px;
+		}
+    h1{
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    #table{
+    	width:800px;
+		  margin: 0 auto;
+		  display: table;
+		  /*border: 1px solid #000;*/
+    }
+    .row{
+    	display: table-row;
+    }
+		.col{
+		  display: table-cell;
+		  padding: 10px;
+		  border: 1px solid #000;
+    }
+    #table-header{
+    	display: table-header-group;
+    	text-align: center;
+    	font-weight: bold;
+    	background: lightblue;
+    }
+    #table-footer{
+    	display: table-footer-group;
+    	text-align: center;
+    	font-weight: bold;
+    	background: lightgreen;
+    }
+    .row-group{
+		  display: table-row-group;
+		  /*background: pink;*/
+		}
+		.table-colgroup{
+			display: table-column-group;
+		}
+		.table-col{
+			display: table-column;
+		}
+		.col-2{
+			background: pink;
+			width: 300px;
+			text-align: center;
+			border: 1px solid red;
+		}
+		.col-1{
+			background: orange;
+		}
+		.caption{
+			display: table-caption;
+			text-align: center;
+			text-transform: uppercase;
+			color: red;
+		}
+  </style>
+</head>
+<body>
+  <h1>Display : Table</h1>
+
+  <div id="table">
+  	<div class="caption">
+  		<h3>Student Information</h3>
+  	</div>
+  	<div class="table-colgroup">
+        <div class="table-col col-1">Col 1 (hidden content)</div>
+        <div class="table-col col-2">Col 2 (hidden content)</div>
+        <div class="table-col col-3">Col 2 (hidden content)</div>
+    </div>
+  	<div id="table-header">
+  		<div class="col">Roll No.</div>
+	  	<div class="col">Student Name</div>
+	  	<div class="col">Age</div>
+  	</div>
+  	<div class="row-group">
+  		<div class="row">
+	  		<div class="col">1</div>
+		  	<div class="col">Yahoo Baba</div>
+		  	<div class="col">25</div>
+	  	</div>
+	  	<div class="row">
+	  		<div class="col" style="vertical-align: middle;">2</div>
+		  	<div class="col">Salman Khan Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quisquam error perferendis, non debitis, quod officiis ipsam ad? Odit quod vitae ducimus! Distinctio nemo culpa facere libero? Placeat, rerum, corporis.</div>
+		  	<div class="col">23</div>
+	  	</div>
+	  	<div class="row">
+	  		<div class="col">3</div>
+		  	<div class="col">Shahid Kapoor</div>
+		  	<div class="col">22</div>
+	  	</div>
+  	</div>
+  	<div id="table-footer">
+  		<div class="col"></div>
+	  	<div class="col">Total :</div>
+	  	<div class="col">2500</div>
+  	</div>
+  </div>
+</body>
+</html>

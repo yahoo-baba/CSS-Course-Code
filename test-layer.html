@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    @layer  one,test.two;
+
+    @import url(css/mystyle.css) layer(one);
+    @import url(css/mystyle2.css) layer(test);
+    /* @import url(css/mystyle2.css) layer(test.three); */
+      
+  </style>
+</head>
+<body>
+  <h1>Cascading @Layer</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sit, harum quo quidem possimus non, blanditiis maxime, voluptate delectus nesciunt molestiae ipsam. Tempora est iste dolorem perspiciatis, asperiores velit corporis iusto repellat vitae quos a numquam nam veniam illum, modi accusantium impedit quisquam minus quas fugiat libero ipsum sunt nostrum ea! Porro dolor velit recusandae culpa. Unde quasi esse nesciunt dolor quod laudantium placeat minus, neque recusandae laborum voluptatem sequi magni est accusamus voluptatibus ut non accusantium consequatur, corporis nisi! Eos corrupti rerum et, quasi nulla asperiores dolore dolorem suscipit recusandae voluptate consequatur impedit, iusto incidunt rem veritatis, non ducimus.</p>
+  <!-- <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sit, harum quo quidem possimus non, blanditiis maxime, voluptate delectus nesciunt molestiae ipsam. Tempora est iste dolorem perspiciatis, asperiores velit corporis iusto repellat vitae quos a numquam nam veniam illum, modi accusantium impedit quisquam minus quas fugiat libero ipsum sunt nostrum ea! Porro dolor velit recusandae culpa. Unde quasi esse nesciunt dolor quod laudantium placeat minus, neque recusandae laborum voluptatem sequi magni est accusamus voluptatibus ut non accusantium consequatur, corporis nisi! Eos corrupti rerum et, quasi nulla asperiores dolore dolorem suscipit recusandae voluptate consequatur impedit, iusto incidunt rem veritatis, non ducimus.</p> -->
+  <p id="xyz" class="abc" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sit, harum quo quidem possimus non, blanditiis maxime, voluptate delectus nesciunt molestiae ipsam. Tempora est iste dolorem perspiciatis, asperiores velit corporis iusto repellat vitae quos a numquam nam veniam illum, modi accusantium impedit quisquam minus quas fugiat libero ipsum sunt nostrum ea! Porro dolor velit recusandae culpa. Unde quasi esse nesciunt dolor quod laudantium placeat minus, neque recusandae laborum voluptatem sequi magni est accusamus voluptatibus ut non accusantium consequatur, corporis nisi! Eos corrupti rerum et, quasi nulla asperiores dolore dolorem suscipit recusandae voluptate consequatur impedit, iusto incidunt rem veritatis, non ducimus.</p>
+</body>
+</html>

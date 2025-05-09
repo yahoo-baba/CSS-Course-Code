@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Counter-Increment</title>
+		<style>
+		body{ font:19px/25px arial;padding: 10px 0 0 20px;
+			counter-reset: my-counter;
+		 }
+		h1{ font-size: 32px;margin-bottom: 35px;color: green;}
+
+		h2::before{
+			content: counter(my-counter,upper-roman);
+			counter-increment: my-counter 1;
+			color: white;
+			background: crimson;
+			display: inline-block;
+			padding: 4px;
+		}
+
+		</style>
+	</head>
+
+	<body>
+		<h1>Yahoo Baba : CSS Counter-Increment</h1>
+
+		<h2>Lorem ipsum dolor sit.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore reiciendis incidunt rerum voluptatum sint nulla quidem eaque alias, tempore ducimus adipisci ea necessitatibus ut. Placeat.</p>
+
+		<h2>Lorem ipsum dolor sit amet.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore reiciendis incidunt rerum voluptatum sint nulla quidem eaque alias, tempore ducimus adipisci ea necessitatibus ut. Placeat.</p>
+
+		<h2>Lorem ipsum dolor.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore reiciendis incidunt rerum voluptatum sint nulla quidem eaque alias, tempore ducimus adipisci ea necessitatibus ut. Placeat.</p>
+
+		<h2>Lorem ipsum dolor sit.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore reiciendis incidunt rerum voluptatum sint nulla quidem eaque alias, tempore ducimus adipisci ea necessitatibus ut. Placeat.</p>
+	</body>
+</html>

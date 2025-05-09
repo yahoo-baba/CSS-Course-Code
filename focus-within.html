@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>:focus-within</title>
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Roboto, Helvetica, Arial;
+      line-height: 1.4;
+      padding: 20px 10%;
+      background: #3c889b;
+    }
+
+    form {
+      background: white;
+    }
+
+    form:focus-within {
+      background: #ffeaa7;
+    }
+    
+    form header {
+      padding: 2rem;
+    }
+    form header div {
+      font-size: 90%;
+      color: #999;
+    }
+    form header h2 {
+      margin: 0 0 5px 0;
+    }
+    form > div {
+      clear: both;
+      overflow: hidden;
+      padding: 0.5rem 2rem;
+    }
+
+    form > div:focus-within{
+      background: #81ecec;
+    }
+
+    form > div:last-child {
+      padding-bottom: 2rem;
+    }
+    
+    form > div > fieldset > div > div {
+      margin: 0 0 5px 0;
+    }
+    form > div > label,
+    legend {
+      width: 25%;
+      float: left;
+      padding-right: 10px;
+      font-weight: bold;
+    }
+    form > div > div,
+    form > div > fieldset > div {
+      width: 75%;
+      float: right;
+    }
+    form > div > fieldset label {
+      font-size: 90%;
+    }
+    fieldset {
+      border: 0;
+      padding: 0;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    textarea {
+      width: 100%;
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=password] {
+      width: 50%;
+    }
+    input[type=text]:focus,
+    input[type=email]:focus,
+    input[type=url]:focus,
+    input[type=password]:focus,
+    textarea:focus {
+      outline: 0;
+      border-color: #4697e4;
+    }
+
+  </style>
+</head>
+<body>
+  <form action="#">
+
+  <header>
+    <h2>CSS :focus-within Pseudo Class</h2>
+  </header>
+  
+  <div>
+    <label for="fullname">Full Name</label>
+    <div>
+      <input id="fullname" type="text" value="" autocomplete="off">
+    </div>
+  </div>
+    
+  <div>
+    <label for="email">Email</label>
+    <div>
+      <input id="email" type="email" value="" autocomplete="off"> 
+   </div>
+  </div>
+
+  <div>
+    <fieldset>
+    
+      <legend>
+        Gender
+      </legend>
+      
+      <div>
+        <div>
+          <input name="gender" type="radio" value="male" checked="checked">
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input id="female" name="gender" type="radio" value="female">
+          <label for="female">Female</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  
+  <div>
+    <fieldset>
+      <legend id="title6">
+        Hobbies
+      </legend>
+      <div>
+      <div>
+        <input name="hobby" type="checkbox">
+        <label class="choice">Travel</label>
+      </div>
+      <div>
+        <input name="hobby" type="checkbox">
+        <label class="choice">Reading Books</label>
+      </div>
+      <div>
+        <input name="hobby" type="checkbox">
+        <label class="choice">Photography</label>
+      </span>
+      </div>
+    </fieldset>
+  </div>
+  
+  <div>
+    <label for="country">Country</label>
+    <div>
+      <select id="country" > 
+        <option>India</option>
+        <option>Pakistan</option>
+        <option>Bangladesh</option>
+        <option>Nepal</option>
+      </select>
+    </div>
+  </div>
+  
+  <div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </div>
+  
+</form>
+</body>
+</html>

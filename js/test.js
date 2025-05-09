@@ -1,0 +1,1 @@
+// write a program to print json with for loop in javascript

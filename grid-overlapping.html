@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Grid</title>
+  <style>
+    body{ font-family: arial,helvetica; }
+    h1{ padding: 0 0 0 40px; }
+
+    .container{
+      background: lightgrey;
+      width: 300px;
+      margin: 50px auto 0;
+
+      display: grid;
+      grid-template-columns: repeat(2,150px);
+      grid-template-rows: repeat(2,150px);
+    }
+    .items{
+      max-width: 150px;
+    }
+    .item1{ background: orangered;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+      align-self: start;
+      z-index: 3
+    }
+    .item2{ background: yellowgreen;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+      align-self: center;
+      justify-self: center;
+      z-index: 1;
+    }
+    .item3{ background: MEDIUMPURPLE;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+      align-self: end;
+      justify-self: end;
+      z-index: 2;
+    }
+
+    .items{ color: #fff;font-size: 20px;font-weight: bold;text-align: center;}
+  </style>
+</head>
+<body>
+  <h1>Yahoo Baba : Overlapping Grid Items</h1>
+
+  <div class="container">
+    <div class="items item1">One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, porro.</div>
+    <div class="items item2">Two Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, doloribus.</div>
+    <div class="items item3">Three Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, minus.</div>
+  </div>
+</body>
+</html>

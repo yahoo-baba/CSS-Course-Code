@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Transform-Style Example</title>		
+		<style>					
+			body{
+				font-family:arial,helvetica;				
+			}
+			div{
+				font-size:20px;				
+				text-align:center;
+				box-sizing:border-box;
+			}
+			div div{
+				padding-top: 20px;
+			}
+			
+			.presBox{
+				width: 400px;
+				height: 250px;
+				margin :0 0 70px 100px;
+				background: grey;
+				perspective: 800px;	
+				transform: rotateY(40deg);
+				transform-style: preserve-3d;
+			}
+			#box{
+				width: 400px;
+				height: 250px;
+				background: pink;				
+				transform: rotateX(40deg);	
+				
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+		<h1 style="margin-bottom: 50px;">Yahoo Baba : CSS Transform-Style Example</h1>		
+					
+		<div class="presBox"><div id="box">Rotate X </div></div>
+		
+	</body>	
+</html>

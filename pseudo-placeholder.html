@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Pseudo Elements Selectors</title>
+		<style>
+			body{ font:19px/25px arial;padding: 10px 0 0 20px; }
+			h1{ font-size: 28px;margin-bottom: 35px; }
+
+			::placeholder{
+				color: red;
+				font-size: 18px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Yahoo Baba : CSS Pseudo Elements ::Placeholder</h1>
+
+		<form action="">
+			<label>First Name :</label> <input type="text" placeholder="Enter your Name"> <br><br>
+
+			<label>Last Name :</label> <input type="text" placeholder="Last Name"> <br><br>
+
+			<label>Your Age :</label> <input type="number" min="10" max="20" placeholder="15"> <br><br>
+
+			<label>Your Email-Id :</label> <input type="email" placeholder="email id" required>  <br><br>
+
+			<label>Your Hobbies :</label>
+				<input type="checkbox" name="hobby"> <label>Sports</label>
+				<input type="checkbox" name="hobby"> <label>Music</label>
+				<input type="checkbox" name="hobby"> <label>Travel</label>
+				<input type="checkbox" name="hobby"> <label>Books Reading</label>
+				<br><br>
+
+			<label>Your Gender :</label>
+				<input type="radio" name="gender"> <label>Male</label>
+				<input type="radio" name="gender"> <label>Female</label>
+				<br><br>
+
+			<label>Your Country :</label>
+				<select name="country" id="">
+					<option value="none">Select</option>
+					<option value="india" selected>India</option>
+					<option value="pakistan">Pakistan</option>
+					<option value="srilanka">Sri lanka</option>
+					<option value="bangladesh">Bangladesh</option>
+				</select>
+				<br><br>
+
+			<input type="submit">
+
+	</body>
+</html>

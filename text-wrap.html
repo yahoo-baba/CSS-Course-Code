@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Text-wrap</title>
+  <style>
+    body{ font-family: arial; }
+
+    .balanced{
+      color: #fff;
+      background: green;
+      max-width: 800px;
+      text-align: center;
+      text-wrap:balance;
+    }
+    .unbalanced{
+      color: yellow;
+      background: blue;
+      max-width: 800px;
+      text-wrap: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS text-wrap</h1>
+
+  <h1 class="balanced">Balance : Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+  <h1 class="unbalanced">Unbalance : Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+
+  <p style="background: pink;text-wrap:balance;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quisquam perferendis fuga unde dignissimos dolorem vero sapiente laudantium pariatur, facilis voluptatibus, quos hic, quibusdam distinctio accusamus est possimus sint at modi aliquid cum. Reiciendis repellendus quis nemo sed qui vero in quam? Molestiae unde perferendis, quae officia harum aliquam voluptatum. Laborum porro corporis fugiat, aut a libero. Deleniti, quam excepturi nesciunt molestias harum soluta tempora tempore ducimus inventore doloribus libero. Neque et odio doloremque temporibus assumenda reprehenderit, atque incidunt. Molestiae id dolorum, perferendis, deserunt est magnam ducimus distinctio nihil dolorem inventore atque reprehenderit. Veniam ad, explicabo pariatur ipsum veritatis minima?</p>
+  <p style="background: pink;text-wrap:wrap;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quisquam perferendis fuga unde dignissimos dolorem vero sapiente laudantium pariatur, facilis voluptatibus, quos hic, quibusdam distinctio accusamus est possimus sint at modi aliquid cum. Reiciendis repellendus quis nemo sed qui vero in quam? Molestiae unde perferendis, quae officia harum aliquam voluptatum. Laborum porro corporis fugiat, aut a libero. Deleniti, quam excepturi nesciunt molestias harum soluta tempora tempore ducimus inventore doloribus libero. Neque et odio doloremque temporibus assumenda reprehenderit, atque incidunt. Molestiae id dolorum, perferendis, deserunt est magnam ducimus distinctio nihil dolorem inventore atque reprehenderit. Veniam ad, explicabo pariatur ipsum veritatis minima?</p>
+</body>
+</html>

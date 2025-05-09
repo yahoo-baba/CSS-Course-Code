@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>:fullscreen</title>
+	<style>
+		body{
+			font-family: arial;
+			font-size: 16px;
+		}
+
+		#box{
+			background: lightblue;
+			/*width: 300px;
+			height: 200px;*/
+		}
+		#box:fullscreen{
+			background: url(images/pattern.jpg);
+			font-size: 40px;
+		}
+		#box:fullscreen p{
+			color: red;
+		}
+		#box:not(:fullscreen) p{
+			color: green;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	 
+  <!-- <div id="box">
+    <p>I'm in fullscreen mode!</p>
+  </div> -->
+  <img src="images/owl.jpg" id="box">
+ 	<br>
+  <button onclick="document.getElementById('box').requestFullscreen();">Go Full Screen!</button>
+
+</body>
+</html>

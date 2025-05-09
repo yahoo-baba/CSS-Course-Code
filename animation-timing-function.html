@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Animation Example</title>		
+		<style>		
+	
+			body{
+				font-family:arial,helvetica;				
+			}
+
+			.card {
+              background: pink;
+			  width: 130px;
+			  height: 100px;
+			  line-height:100px;
+			  padding-left:20px;
+			  font-size:20px;
+			  font-weight:bold;
+			  margin: 20px;
+			  animation: sample 2s infinite alternate;
+			}
+		    .easy{
+			   animation-timing-function: easy;
+			}
+			.linear{
+			   animation-timing-function: linear;
+			   background: lightblue;
+			}
+			.ease-in{
+			   animation-timing-function: ease-in;
+			   background: lightgreen;
+			}
+			.ease-out{
+			   animation-timing-function: ease-out;
+			}
+			.ease-in-out{
+			   animation-timing-function: ease-in-out;
+			   background: lightblue;
+			}
+			.steps{
+			   animation-timing-function: steps(4,start);
+			    background: lightgreen;
+			}
+			@keyframes sample{
+			  from{ width: 130px; }
+			  to{ width: 500px;}
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1 style="margin-bottom: 50px;">Yahoo Baba : CSS Animation-Timing-Function</h1>		
+					
+		<div class="card ease">Easy</div>		
+		<div class="card linear">Linear</div>		
+		<div class="card ease-in">Easy-In</div>		
+		<div class="card ease-out">Easy-Out</div>		
+		<div class="card ease-in-out">Easy-In-Out</div>		
+		<div class="card steps">Steps</div>		
+	</body>	
+</html>

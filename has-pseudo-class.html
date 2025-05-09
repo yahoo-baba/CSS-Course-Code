@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>:has Pseudo Class</title>
+	<style>
+	   body{
+	   	font-family: arial;
+	   	font-size: 16px;
+	   }
+		
+      div{
+      	border: 1px solid #000;
+      	margin-bottom: 20px;
+      }
+
+      div:has(h2){
+      	background: lightblue;
+      }
+
+	</style>
+</head>
+<body>
+
+	<div>
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, tempore?</p>
+	</div>
+
+	<div>
+		<h2>Sub Heading 1</h2>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Nulla modi consectetur itaque officia exercitationem molestias dolore voluptates, nostrum! Eveniet, iure!</p>
+	</div>
+
+</body>
+</html>

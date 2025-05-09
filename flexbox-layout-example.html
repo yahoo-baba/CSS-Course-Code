@@ -1,0 +1,259 @@
+<!doctype html>
+<title>Flexbox Website Layout</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: arial;
+  }
+  header{
+    display: flex;
+    align-items: center;
+  }
+  header ul{
+    list-style: none;
+  }
+  header a{
+    color:#fff;
+  }
+  #menu ul,
+  #social-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  #menu a{
+    padding: 10px;
+    text-decoration: none;
+  }
+  #social-links a{
+    padding: 10px;
+
+  }
+  #logo{
+    margin: 0 auto;
+  }
+  #logo a{
+    text-decoration: none;
+    font-size: 30px;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+
+  }
+  #main > article {
+    flex: 1;
+  }
+
+  #main > aside {
+    background: beige;
+    flex: 0 0 20vw;
+  }
+  aside ul{
+    list-style: none;
+    padding: 0;
+  }
+  aside ul li{
+    border-bottom: 1px solid #b9c4a4;
+  }
+  aside ul a{
+    color: #40531a;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    padding: 7px;
+  }
+  aside img{
+    width: 100%;
+  }
+  header {
+    background: #40531a;
+    padding: 20px 0;
+  }
+  footer {
+    background: #40531a;
+    color: #fff;
+    padding:20px;
+    text-align: center;
+  }
+  .services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 0px solid #000;
+  }
+  .service-box{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 32%;
+    max-width: 370px;
+    padding: 10px;
+    margin-bottom:20px ;
+    border: 1px solid #eee;
+  }
+  .service-box img{
+    width: 100%;
+  }
+  .service-title h3{
+    margin: 10px 0;
+  }
+  .service-desc p{
+    margin: 0 0 10px;
+  }
+  .call-to-action{
+    margin-top: auto;
+    align-self: flex-start;
+  }
+  .call-to-action a{
+    display: block;
+    padding: 8px 13px;
+    color: #fff;
+    background-color: #8e9ea1;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition-property: border, background-color, color;
+    transition-duration: 0.3s;
+  }
+  .call-to-action a:hover{
+    background-color: transparent;
+    color: #8e9ea1;
+    border: 2px solid #8e9ea1;
+  }
+  article, aside {
+    padding: 1em;
+  }
+  @media screen and (max-width: 850px) {
+    .service-box{
+      flex-basis: 48%;
+      max-width: 370px;
+    }
+    #main > aside {
+      flex: 0 0 30vw;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    header{
+      flex-direction: column;
+    }
+    header > *{
+      padding: 10px 0;
+    }
+    #logo{
+      order: -1;
+    }
+
+    #main {
+      flex-direction: column;
+    }
+
+    article {
+      order: -1;
+    }
+    article h2,
+    article h3{
+      text-align: center;
+    }
+    .services-container{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+</style>
+<body>
+  <header>
+    <nav id="menu">
+      <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="logo">
+        <a href="#">Yahoo Baba</a>
+    </div>
+
+    <nav id="social-links">
+        <ul>
+            <li><a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+
+  </header>
+  <div id="main">
+    <aside>
+      <ul>
+        <li><a href="">Side Links</a></li>
+        <li><a href="">Side Links</a></li>
+        <li><a href="">Side Links</a></li>
+        <li><a href="">Side Links</a></li>
+        <li><a href="">Side Links</a></li>
+      </ul>
+      <img src="images/aside-ad.jpg" alt="">
+    </aside>
+    <article>
+      <h2>Welcome to Our Website</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum hic nihil vitae voluptatum enim, neque quos voluptatibus harum facilis, officiis, dicta illum voluptates ipsam! Ea odio reiciendis cumque a eum at minima assumenda delectus, architecto, minus libero, unde sed rerum dignissimos inventore nisi voluptatibus adipisci. Commodi nisi ipsam rerum dolorum placeat similique odio eius necessitatibus, totam nihil autem minima animi error, et magnam at, illo corrupti eos modi molestiae! Esse nesciunt modi blanditiis. Non doloribus quidem at enim, praesentium officia ipsum delectus corrupti voluptatem eos, possimus magni aperiam, hic dignissimos eligendi ut cum error veniam id! Ipsam esse in fuga.</p>
+
+      <h2>Our Services</h2>
+      <div class="services-container">
+        <div class="service-box">
+            <div class="service-img">
+                <img src="images/webdesign.jpg" alt="">
+            </div>
+            <div class="service-title">
+                <h3>Web Designing</h3>
+            </div>
+            <div class="service-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sit nostrum dolore architecto illo fugit consequuntur doloremque officia laboriosam, ullam beatae soluta quibusdam quasi, unde.</p>
+            </div>
+            <div class="call-to-action">
+                <a href="">Read more</a>
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="service-img">
+                <img src="images/web-dev.jpg" alt="">
+            </div>
+            <div class="service-title">
+                <h3>Web Development</h3>
+            </div>
+            <div class="service-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid.</p>
+            </div>
+            <div class="call-to-action">
+                <a href="">Read more</a>
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="service-img">
+                <img src="images/mobile-dev.jpg" alt="">
+            </div>
+            <div class="service-title">
+                <h3>Mobile App Development</h3>
+            </div>
+            <div class="service-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid.</p>
+            </div>
+            <div class="call-to-action">
+                <a href="">Read more</a>
+            </div>
+        </div>
+
+      </div>
+    </article>
+
+  </div>
+  <footer>Made by Yahoo Baba</footer>
+</body>

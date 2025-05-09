@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Margin-block</title>
+  <style>
+    #container{
+      border: 3px solid #000;
+      display: flex;
+    }
+
+    #container div{
+      background: lightgreen;
+      border: 3px solid green;
+    }
+
+    #container #box{
+      background: lightblue;
+      border: 3px solid blue;
+      margin-block:20px 40px;
+      /* writing-mode: vertical-rl; */
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Margin-block</h1>
+
+  <div id="container">
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum aut velit fugit repellat, autem labore suscipit aspernatur ipsa qui iusto odio mollitia! Unde pariatur quos ducimus suscipit modi ullam quisquam.</div>
+    <div id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor iure rerum labore repudiandae? Unde deserunt libero atque nisi corporis fugit alias facere blanditiis! Placeat quia eaque, nihil facilis, aliquam ut molestiae illum hic numquam perferendis libero laudantium, expedita vel magnam reiciendis corporis eius officiis sapiente perspiciatis aut. Delectus minus incidunt ipsum, cumque consequatur facilis necessitatibus illum, neque quaerat ad iure ducimus reprehenderit consequuntur explicabo asperiores libero possimus unde nobis?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod pariatur sint cupiditate ea, vero, fugit commodi explicabo iure nobis doloremque laborum ipsum sequi qui dolore eius nesciunt. Iure, aliquam exercitationem.</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>CSS Mix-Blend-Mode</title>		
+		<style>	
+			body{
+				font-family:arial;				
+			}
+			#box{
+				width: 1500px;
+				height: 440px;
+				border:2px solid black;			
+						
+			}	
+			
+			h2{
+				font-size:150px;
+				margin: 0;
+			}
+			h2.first{
+				color:red;
+			}
+			h2.second{
+				color:gold;
+				margin-top:-100px;
+				margin-left: 5px;
+				mix-blend-mode:saturation;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Yahoo Baba : CSS Mix-Blend-Mode</h1>
+		
+		<div id="box">				
+			
+			<h2 class="first">Mix-Blend-Mode</h2>
+			<h2 class="second">Mix-Blend-Mode</h2>
+		</div>		
+		
+	</body>	
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aspect Ratio</title>
+	<style>
+		#test{
+
+			background: pink;
+			border: 2px solid #000;
+			aspect-ratio: 1/1;
+		}
+		.parent{
+			width: 400px;
+			border: 3px solid #000;
+		}
+
+		.parent img{
+			width:100%;
+			object-fit: cover;
+			aspect-ratio: 1/1;
+		}
+
+		.parent iframe{
+			/*aspect-ratio: attr(width) / attr(height);*/
+			aspect-ratio: 16/9;
+			width: 100%;
+			height: auto;
+		}
+
+		/*iframe[width][height] {
+		  aspect-ratio: attr(width) / attr(height);
+		  width: 100%;
+        height: auto;
+		}*/
+		/*img{aspect-ratio: attr(width) / attr(height);
+			width: 100%;
+			object-fit: cover;
+			aspect-ratio: 1/1;
+			display: block;
+		}*/
+/*img{
+	width: 300px;
+	aspect-ratio: 1/2;
+	object-fit: cover;
+}*/
+		@media screen and (max-width: 500px) {
+			.parent{
+				width: 100%;
+			}
+			/*img{
+				width: 100%
+			}*/
+		}
+	</style>
+</head>
+<body>
+	
+		<!-- <div id="test">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+			
+		</div>
+ -->
+	
+		<!-- <div class="parent">
+			<img src="images/salman.jpg"  alt="">
+			Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Minus omnis vel accusamus nesciunt natus recusandae quidem quasi. Repellat modi molestiae dolor in animi tempore reiciendis enim provident eaque, nisi nemo! Consectetur ipsum odio repudiandae corporis qui voluptatum laborum obcaecati esse voluptatem. Aut placeat officiis, modi eum, aperiam eveniet mollitia exercitationem omnis ducimus ab dicta sequi provident aspernatur nisi doloremque architecto molestias corporis harum eos nobis possimus! Porro nemo dignissimos explicabo, quasi provident cum numquam temporibus consequatur, eligendi natus distinctio earum ducimus atque eum ex veritatis amet sed asperiores corporis nesciunt modi iure doloremque culpa obcaecati. Officia iusto distinctio incidunt at.
+		</div> -->
+		
+	<div class="parent">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/o9NILK4OXpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	
+</body>
+</html>

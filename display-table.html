@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Display:table</title>
+	<style>
+    body{
+			font-family: arial;
+			font-size: 20px;
+			line-height: 24px;
+		}
+    h1{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    #table{
+    	display: table;
+    	width: 600px;
+    	border: 1px solid #000;
+    	margin: 0 auto;
+    }
+    .row{
+    	display: table-row;
+    }
+    .col{
+    	display: table-cell;
+    	padding: 10px;
+    	border: 1px solid #000;
+    }
+    #table-header{
+    	display: table-header-group;
+    	background: lightblue;
+    	text-align: center;
+    	font-weight: bold;
+    }
+    #table-footer{
+    	display: table-footer-group;
+    	background: lightgreen;
+    }
+    #row-group{
+    	display: table-row-group;
+    }
+    #table-colgroup{
+    	display: table-column-group;
+    }
+    .table-col{
+    	display: table-column;
+    }
+    .col-2{
+    	background: pink;
+    	width: 400px;
+    }
+    .col-1{
+    	background: yellowgreen;
+    }
+    .caption{
+    	display: table-caption;
+    	text-align: center;
+    	text-transform: uppercase;
+    	color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Display : Table</h1>
+
+  <div id="table">
+  	<div class="caption">
+  		<h3>Student Information</h3>
+  	</div>
+  	<div id="table-colgroup">
+  		<div class="table-col col-1">Col 1</div>
+  		<div class="table-col col-2">Col 2</div>
+  		<div class="table-col col-3">Col 3</div>
+  	</div>
+  	<div id="table-header">
+  		<div class="col">Roll No.</div>
+	  	<div class="col">Student Name</div>
+	  	<div class="col">Age</div>
+  	</div>
+  	<div id="row-group">
+  		<div class="row">
+	  		<div class="col">1</div>
+		  	<div class="col">Yahoo Baba</div>
+		  	<div class="col">25</div>
+	  	</div>
+	  	<div class="row">
+	  		<div class="col" style="vertical-align:middle;">2</div>
+		  	<div class="col">Salman Khan Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequatur, est exercitationem iste id deserunt! Vel, necessitatibus facilis dolore eos hic et architecto, perferendis officia incidunt itaque obcaecati quaerat eligendi.</div>
+		  	<div class="col">24</div>
+	  	</div>
+	  	<div class="row">
+	  		<div class="col">3</div>
+		  	<div class="col">Sahid Kapoor</div>
+		  	<div class="col">23</div>
+	  	</div>
+  	</div>
+  	<div id="table-footer">
+  		<div class="col"></div>
+	  	<div class="col">Total Records : </div>
+	  	<div class="col">3</div>
+  	</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Mask</title>
+		<style>
+		body{ font:19px/25px arial;padding: 10px 0 0 20px;
+		}
+		h1{ font-size: 32px;margin-bottom: 35px;color: green;}
+
+		img.one{
+			/*-webkit-mask-image: url(https://lh5.googleusercontent.com/-d9lVoZNOR6SOXRyTwagthP16VTMGftuqnOyKn9VRncA5nqyaTp1DfTEqlArsUuVENGUKugCgZxbGOlMTSZDommn9Z63vmO5d0BxLQj18oCl9y8EpBjJ24yqjY021t9hQIFg0tyf);*/
+		
+		  /*-webkit-mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/851550/spongebob.gif);*/
+		   background-color: #8cffa0;
+
+		  /* mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/234228/alpha-cat.png);
+		   -webkit-mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/234228/alpha-cat.png) center / 300px no-repeat;*/
+
+		  -webkit-mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/234228/alpha-cat.png);
+		  mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/234228/alpha-cat.png);
+
+		/*mask-size: cover;
+  		mask-repeat: no-repeat;
+		-webkit-mask-size: contain;
+  		-webkit-mask-repeat: no-repeat;*/
+  		border: 1px solid #000;
+		}
+		</style>
+	</head>
+
+	<body>
+		<h1>Yahoo Baba : CSS Mask</h1>
+
+		<img src="images/cat.jpg" class="one">
+	</body>
+</html>

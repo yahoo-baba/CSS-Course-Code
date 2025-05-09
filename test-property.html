@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@property</title>
+  <style>
+    @property --property-name {
+      syntax: "<color>";
+      inherits: false;
+      initial-value: red;
+    }
+    /* :root{
+      --property-name :orange;
+    } */
+
+    h1{
+      --property-name : green;
+      color: var(--property-name);
+    }
+
+    h2{
+      --property-name : 50px;
+      color: var(--property-name);
+      /* font-size: var(--property-name); */
+    }
+  </style>
+</head>
+<body>
+  <h1>Yahoo Baba</h1>
+  <h2>Yahoo Baba 2</h2>
+</body>
+</html>

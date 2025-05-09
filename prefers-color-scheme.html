@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>prefers-color-scheme</title>
+	<!-- <meta name="color-scheme" content="light"> -->
+	<style>
+		:root{
+			--base-color: orange;
+		}
+		body{
+			background: var(--base-color);
+		}
+		@media (prefers-color-scheme: light){
+			:root{
+				--base-color: pink;
+			}
+		}
+		@media (prefers-color-scheme: dark){
+			:root{
+				--base-color: lightgreen;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS @media (prefers-color-scheme)</h1>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique impedit, quia accusamus minus! Animi eius distinctio ducimus similique ratione velit quisquam, nam aliquam amet laborum ea reprehenderit modi fugit, sequi non, asperiores unde voluptatum! Quos, sequi labore qui. Tenetur accusantium eveniet obcaecati odio corporis beatae, illum doloribus nam, quis perferendis et, rerum maxime, atque consequuntur! Culpa dolorem totam, voluptatum quis rem ea eius impedit velit illo laboriosam! Commodi eligendi molestias voluptatum debitis similique, dignissimos, sapiente neque, nobis veniam eos libero sed unde, reprehenderit. Autem nobis animi obcaecati voluptas quam suscipit fugit aspernatur ratione rem, inventore iusto quo mollitia pariatur dolorum?
+	<p>
+</body>
+</html>

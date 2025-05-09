@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backdrop Filter</title>
+  <style>
+    #container{
+    	width: 600px;
+    	height: 600px;
+    	border: 5px solid #000;
+    	background: url(images/road.jpg) no-repeat;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #inner{
+      width: 400px;
+      height: 250px;
+      border-radius: 5px;
+      text-align: center;
+      border: 2px solid #fff;
+      backdrop-filter: blur(5px);
+      transition : backdrop-filter .3s;
+    }
+   /* #inner:hover{
+      backdrop-filter: blur(4px) sepia(80%);
+    }*/
+  </style>
+</head>
+<body>
+ 	<div id="container">
+    <div id="inner">
+      <h1>Yahoo Baba</h1>
+    </div>
+  </div>
+</body>
+</html>

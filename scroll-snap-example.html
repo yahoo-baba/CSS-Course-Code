@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scroll-Snap</title>
+  <style>
+    * {
+    	box-sizing: border-box;
+    }
+    html {
+    	font-family: sans-serif;
+    	scroll-snap-type: y mandatory;
+    }
+    body{
+      margin: 0;
+    }
+    section {
+    	border-bottom: 1px solid white;
+    	padding: 1rem;
+    	height: 100vh;
+    	scroll-snap-align: start;
+    	text-align: center;
+    	position: relative;
+    }
+    section:nth-of-type(1) {
+      background: #00b894;
+    }
+    section:nth-of-type(2) {
+      background: #0984e3;
+    }
+    section:nth-of-type(3) {
+      background: #d63031;
+    }
+    section:nth-of-type(4) {
+      background: #e67e22;
+    }
+    section:nth-of-type(5) {
+      background: #9b59b6;
+    }
+    h1	{
+    	position: absolute;
+    	top: 50%;
+    	transform: translateY(-50%);
+    	text-align: center;
+    	color: white;
+    	width: 100%;
+    	left: 0;
+    	font-size: calc(1rem + 3vw);
+    }
+  </style>
+</head>
+<body>
+  <section>
+  	<h1>Section One</h1>
+  </section>
+  <section>
+  		<h1>Section Two</h1>
+  </section>
+  <section>
+  		<h1>Section Three</h1>
+  </section>
+  <section>
+  		<h1>Section Four</h1>
+  </section>
+  <section>
+  		<h1>Section Five</h1>
+  </section>
+</body>
+</html>

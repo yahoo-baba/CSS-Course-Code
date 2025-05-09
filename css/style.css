@@ -1,0 +1,11 @@
+/*@import "print.css" print;*/
+
+h1,h2{
+	color: brown;
+}
+
+/*@page{
+	widows: 4;
+	orphans: 2;
+}*/
+

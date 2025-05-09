@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Display:table</title>
+	<style>
+    body{
+			font-family: arial;
+			font-size: 20px;
+			line-height: 24px;
+		}
+    h1{
+      text-align: center;
+      margin-bottom: 40px;
+    }
+		#table{
+			width: 500px;
+			margin: 0 auto;
+			display: table;
+			border: 1px solid #000;
+		}
+		
+		.col{
+			display: table-cell;
+			/*width: 200px;*/
+			
+			padding: 10px;
+			/*background: pink;*/
+			border: 1px solid #000;
+		}
+		.row{
+			display: table-row;
+		}
+		.row:nth-child(even){
+			/*background: lightgrey;*/
+		}
+
+		.table-header{
+			background: lightblue;
+			display: table-header-group;
+		}
+		.table-header .col{
+			text-align: center;
+			font-weight: bold;
+		}
+		.table-footer{
+			background: lightsalmon;
+			display: table-footer-group;
+		}
+		.row-group{
+			display: table-row-group;
+			/*background: pink;*/
+		}
+		.caption {
+			/*background: pink;*/
+	    display: table-caption;
+	    text-align: center;
+		}
+		.table-colgroup{
+			display: table-column-group;
+		}
+		.table-col{
+			display: table-column;
+		}
+		.col-1{
+      text-align: center;
+      background: pink;
+      border: 1px solid red;
+		}
+		.col-2{
+			background: yellowgreen;
+			width: 300px;
+		}
+  </style>
+</head>
+<body>
+  <h1>Display : Table</h1>
+
+  <div id="table">
+  	<div class="caption">
+  		<h3>Student Information</h3>
+  	</div>
+  	<div class="table-colgroup">
+        <div class="table-col col-1">Col 1 (hidden content)</div>
+        <div class="table-col col-2">Col 2 (hidden content)</div>
+        <div class="table-col col-3">Col 2 (hidden content)</div>
+    </div>
+  	<div class="table-header">
+   	  <div class="col" style="width:70px;">S.No.</div>
+	  	<div class="col">Name</div>
+	  	<div class="col">Age</div>
+	  </div>
+  	<div class="row-group">
+  		<div class="row">
+	   	  <div class="col">1</div>
+		  	<div class="col">Yahoo Baba</div>
+		  	<div class="col">25</div>
+		  </div>
+		  <div class="row">	
+		  	<div class="col">2</div>
+		  	<div class="col">Shahid Kapoor</div>
+	  	  <div class="col">22</div>
+	    </div>
+	    <div class="row">	
+		  	<div class="col">3</div>
+		  	<div class="col">Shahid Kapoor</div>
+	  	  <div class="col">22</div>
+	    </div>
+	    <div class="row">	
+		  	<div class="col" >4</div>
+		  	<div class="col" >Shahid Kapoor</div>
+	  	  <div class="col">22</div>
+	    </div>
+  	</div>
+    <div class="table-footer">
+   	  <div class="col">S.No.</div>
+	  	<div class="col">Name</div>
+	  	<div class="col">Age</div>
+	  </div>
+  </div>
+
+  
+</body>
+</html>

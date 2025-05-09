@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>@layer</title>
+  <style>
+
+    @layer three, two, one;
+    @import url(css/mystyle.css) layer(one);
+
+      @layer two{
+        .first{
+          color: green;
+        }
+      }
+
+      @layer three{
+        #second{
+          color: blue;
+        }
+       
+      }
+   
+
+    
+  </style>
+</head>
+
+<body>
+  <h1>CSS @layer</h1>
+
+  <p class="first" id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem illo tempora vel rerum est fuga doloremque sit similique ipsa, provident blanditiis architecto maiores, dolor eos nemo consequuntur dignissimos sapiente deserunt voluptate eveniet ut! Eius quod, aspernatur nostrum dolorum sapiente omnis aut libero vel provident quas numquam reprehenderit fugiat nisi asperiores obcaecati distinctio, velit illum atque officia optio dolores quia corporis. Quia, eius cumque nesciunt velit nihil cum ducimus nobis aliquid repudiandae voluptatem reprehenderit excepturi nisi iste quae consequatur atque? Unde eligendi in reprehenderit, laudantium hic adipisci voluptas dolorum harum nesciunt. Velit suscipit facilis ad doloremque id at minus voluptatum?</p>
+</body>
+</html>

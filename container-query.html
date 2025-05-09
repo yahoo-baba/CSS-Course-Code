@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@container Query</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    .post2{
+      margin-top: 20px;
+      border: 1px solid blue;
+      width: 70%;
+      container-type: inline-size;
+      container-name : mypost mycard;
+    }
+    .card h2{
+      font-size: 10cqmin;
+    }
+
+    /* @container mypost (max-width: 400px){
+      .card h2{
+        color: red;
+        font-size: 3em;
+      }
+    }
+
+    @container mycard (max-width: 200px){
+      .card h2{
+        color: blue;
+        font-size: 2em;
+      }
+    } */
+
+    .post + span{
+      font-size: 30px;
+      background: orangered;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>@container Query</h1>
+  
+
+  <div class="post2">
+    <div class="card">
+      <h2>Card Title 2</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eveniet!</p>
+    </div>
+  </div>
+
+  <script>
+    // const post = document.querySelector(".post");
+    // const span = document.createElement("span");
+    // span.innerHTML = ".post width: " + post.clientWidth + "px";
+    // post.parentNode.insertBefore(span, post.nextSibling);
+    // // update on resize
+    // window.addEventListener("resize", () => {
+    //   span.innerHTML = ".post width: " + post.clientWidth + "px";
+    // });
+
+    // const post = document.querySelector(".post");
+    // const span = document.createElement("span");
+    // span.innerHTML = ".post height: " + post.clientHeight + "px";
+    // post.parentNode.insertBefore(span, post.nextSibling);
+    // // update on resize
+    // window.addEventListener("resize", () => {
+    //   span.innerHTML = ".post height: " + post.clientHeight + "px";
+    // });
+
+</script>
+</body>
+</html>

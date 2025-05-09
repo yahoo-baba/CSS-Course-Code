@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Perspective Example</title>		
+		<style>					
+			body{
+				font-family:arial,helvetica;
+				
+			}
+			div{
+				font-size:20px;				
+				text-align:center;
+				box-sizing:border-box;
+			}
+			div div{
+				padding-top: 20px;
+			}
+			.no-presBox{
+				width: 200px;
+				height: 150px;
+				margin :0 0 70px 100px;
+				background: grey;
+			}
+			.presBox{
+				width: 200px;
+				height: 150px;
+				margin :0 0 70px 100px;
+				background: grey;
+				perspective: 800px;
+			
+			}
+			#box{
+				width: 200px;
+				height: 150px;
+				background: pink;				
+				transform: rotateX(60deg);				
+			}
+			
+			#boxi{
+				width: 200px;
+				height: 150px;
+				background: pink;				
+				transform:rotateX(60deg);				
+			}
+			
+			#box2{
+				width: 200px;
+				height: 150px;
+				background: tomato;				
+				transform:rotateY(60deg);
+				transition:transform 1s;				
+			}
+			
+			#box2i{
+				width: 200px;
+				height: 150px;
+				background: tomato;				
+				transform:rotateY(60deg);
+				transition:transform 1s;				
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<h1 style="margin-bottom: 50px;">Yahoo Baba : CSS Perspective Example</h1>		
+				
+		<table>
+			<tr>
+				<td valign="top" width="400px">
+					<div class="no-presBox"><div id="box">Rotate X</div></div>
+					
+				</td>
+				<td valign="top" width="400px">
+					<div class="presBox"><div id="boxi">Rotate X <br> & <br>Perspective</div></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="no-presBox"><div id="box2">Rotate Y</div></div>
+					
+				</td>
+				<td>
+					<div class="presBox"><div id="box2i">Rotate Y <br> & <br>Perspective</div></div>
+				</td>
+			</tr>
+			
+		</table>
+	</body>	
+</html>

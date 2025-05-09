@@ -1,0 +1,16 @@
+body{
+  padding: 10px;
+}
+#parent{
+  background: lightblue;
+  border: 5px solid green;
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+}
+
+#parent div{
+  background: lightblue;
+  border: 3px solid red;
+  padding: 5px;
+}
